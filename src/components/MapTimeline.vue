@@ -5,7 +5,12 @@
       <div id="dist-prominent">District: <span></span></div>
     </div>
     <div id="map">
-      <div id="hover-note">Hover over the map to explore</div>
+      <div id="hover-note">
+        Hover over the map <span class="last-show">and dots</span> to explore.
+        <br /><span class="last-show"
+          >Click on a district or dot to see cases</span
+        >
+      </div>
 
       <div id="tooltip">
         <div id="date">Date: <span></span></div>

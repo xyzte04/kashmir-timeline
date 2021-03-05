@@ -584,6 +584,7 @@ export default {
     };
   },
   mounted: function() {
+    d3.selectAll(".last-show").style("display", "none");
     d3.selectAll(".scroll-section").style(
       "height",
       window.innerHeight * 0.4 + "px"
@@ -761,6 +762,8 @@ export default {
                 .classed("subtle", false)
                 .attr("r", defaultR);
 
+                d3.selectAll(".last-show").style("display", "");
+
               // d3.selectAll(".last")
               //   .transition()
               //   .style("opacity", 0);
@@ -795,6 +798,8 @@ export default {
               d3.selectAll("circle")
                 .classed("subtle", true)
                 .attr("r", defaultR);
+
+                d3.selectAll(".last-show").style("display", "none");
 
               // d3.selectAll(".last")
               //   .transition()
