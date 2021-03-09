@@ -56,7 +56,7 @@ var colors = {
 
 var jammuDistricts = [
   "path.kargil",
-  "path.leh-ladakh",
+  "path.leh",
   "path.jammu",
   "path.doda",
   "path.kathua",

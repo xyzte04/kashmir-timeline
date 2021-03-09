@@ -206,6 +206,27 @@ d3.json("data/jnk.json").then(mapData => {
 
       jnkLabel
         .append("text")
+        .attr("class", "jnk-label-border")
+        .attr("y", h / 2 + 100)
+        .attr("x", w / 2 - 90)
+        .text("Jammu");
+
+      jnkLabel
+        .append("text")
+        .attr("class", "jnk-label-border")
+        .attr("y", h / 2 + 20)
+        .attr("x", w / 2 + 30)
+        .text("Leh");
+
+      jnkLabel
+        .append("text")
+        .attr("class", "jnk-label-border")
+        .attr("x", w / 2 - 100)
+        .attr("y", h / 2 + 50)
+        .text("Kashmir");
+
+      jnkLabel
+        .append("text")
         .attr("y", h / 2 + 100)
         .attr("x", w / 2 - 90)
         .text("Jammu");
@@ -219,7 +240,7 @@ d3.json("data/jnk.json").then(mapData => {
       jnkLabel
         .append("text")
         .attr("x", w / 2 - 100)
-        .attr("y", h / 2 - 30)
+        .attr("y", h / 2 + 50)
         .text("Kashmir");
 
       // .attr("text-anchor", "middle")
@@ -439,7 +460,7 @@ $orange-dark: rgb(194, 143, 56);
       }
       &.hide-jammu {
         path.kargil,
-        path.leh-ladakh,
+        path.leh,
         path.jammu,
         path.doda,
         path.kathua,
@@ -461,12 +482,35 @@ $orange-dark: rgb(194, 143, 56);
       &.dark-greyed {
         text {
           fill: #a87373;
+          &.jnk-label-border {
+            stroke-width: 2px;
+            stroke: white;
+          }
         }
       }
       text {
-        fill: #a6a6a6;
+        fill: white;
+        &.jnk-label-border {
+          stroke-width: 2px;
+          stroke: black;
+        }
       }
     }
+
+    // .jnk-label-border {
+    //   pointer-events: none;
+    //   font-size: 1.2rem;
+    //   &.dark-greyed {
+    //     text {
+    //       stroke: #a87373;
+    //       stroke-width: 4px;
+    //     }
+    //   }
+    //   text {
+    //     stroke: white;
+    //     stroke-width: 4px;
+    //   }
+    // }
 
     .map-hover-label,
     .map-label {
