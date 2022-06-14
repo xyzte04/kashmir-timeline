@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- FB -->
+  <meta property="og:url" content="https://timeline.kashmir-insight.com/?n=1" />
+  <meta property="og:title" content="Dance of terror in Kashmir" />
+  <meta property="og:image" content="https://timeline.kashmir-insight.com/share-card.jpg" />
+  <meta property="og:description"
+    content="Human stories of political leaders killed by terrorists from Kashmir in 2020." />
+  <meta name="description" content="Human stories of political leaders killed by terrorists from Kashmir in 2020." />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ZiiyyaaB">
+  <meta name="twitter:title" content="Dance of terror in Kashmir">
+  <meta name="twitter:description"
+    content="Human stories of political leaders killed by terrorists from Kashmir in 2020.">
+  <meta name="twitter:creator" content="@ZiiyyaaB">
+  <meta name="twitter:image:src" content="https://timeline.kashmir-insight.com/share-card.jpg">
+  <link rel="canonical" href="https://timeline.kashmir-insight.com/?n=1" />
+
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DD49GD2LMP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-DD49GD2LMP');
+  </script>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
